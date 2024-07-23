@@ -1,4 +1,5 @@
 import { Divider } from "@/app/components/divider";
+import { Input } from "@/app/components/input";
 import { FaChevronRight } from "react-icons/fa6";
 
 export const Hero = () => {
@@ -25,12 +26,12 @@ export const Hero = () => {
           İstediğiniz yerde izleyin. İstediğiniz zaman iptal edin.
         </p>
         <div>
-          <h3 className="text-xl font-normal leading-6 text-white max-w-4xl my-4">
+          <h3 className="text-xl font-normal leading-6 text-white max-w-4xl my-4 mb-8">
             İzlemeye hazır mısınız? Üye olmak ya da hesabınıza tekrar ulaşmak
             için tek yapmanız gereken e-posta adresinizi girmek.
           </h3>
-          <div>
-            <input type="text" />
+          <div className="flex items-center gap-1 justify-center h-8">
+            <Input label="E-posta adresi" name="email" id="email" />
             <button className="bg-[#e50914] text-white rounded py-3 px-6 text-xl font-bold min-h-8 inline-flex items-center gap-2">
               Başlayın
               <FaChevronRight />
