@@ -1,4 +1,3 @@
-import { Divider } from "../components/divider";
 import { FAQ } from "./_components/faq";
 import { Features } from "./_components/features";
 import { Footer } from "./_components/footer";
