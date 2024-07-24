@@ -1,4 +1,3 @@
-import { Divider } from "@/app/components/divider";
 import { Input } from "@/app/components/input";
 import { FaChevronRight } from "react-icons/fa6";
 
@@ -8,7 +7,7 @@ export const Hero = () => {
       style={{
         backgroundImage: `url(https://assets.nflxext.com/ffe/siteui/vlv3/655a9668-b002-4262-8afb-cf71e45d1956/90916372-5f3e-4a29-a579-2a7463fb6e73/TR-tr-20240715-POP_SIGNUP_TWO_WEEKS-perspective_WEB_2231687e-18f2-468d-a941-c6d3f9ac4a4f_large.jpg)`,
       }}
-      className="bg-slate-500 min-h-[700px] flex items-center justify-center w-full absolute bg-no-repeat bg-cover bg-center"
+      className="bg-slate-500 border-b-8 border-[#232323] min-h-[700px] flex items-center justify-center w-full relative bg-no-repeat bg-cover bg-center"
     >
       <div
         style={{
@@ -39,7 +38,6 @@ export const Hero = () => {
           </div>
         </div>
       </div>
-      <Divider />
     </div>
   );
 };
