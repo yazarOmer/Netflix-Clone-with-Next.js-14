@@ -1,12 +1,16 @@
 "use client";
 import { Input } from "@/app/components/input";
+import { register as registerAction } from "@/actions/register";
 import { RegisterSchema } from "@/schemas";
 import { zodResolver } from "@hookform/resolvers/zod";
 import Link from "next/link";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
+import { useTransition } from "react";
 
 export const RegisterForm = () => {
+  const [isPending, startTransition] = useTransition();
+
   const {
     register,
     handleSubmit,
@@ -20,7 +24,9 @@ export const RegisterForm = () => {
   });
 
   const onSubmit = (data: z.infer<typeof RegisterSchema>) => {
-    console.log(data);
+    startTransition(() => {
+      registerAction(data);
+    });
   };
 
   return (
@@ -63,7 +69,10 @@ export const RegisterForm = () => {
           {errors.password?.message}
         </p>
 
-        <button className="bg-[#e50914] text-white rounded py-2 w-full px-4 text-md font-medium min-h-8">
+        <button
+          disabled={isPending}
+          className="bg-[#e50914] text-white rounded py-2 w-full px-4 text-md font-medium min-h-8"
+        >
           Kayıt Ol
         </button>
       </form>

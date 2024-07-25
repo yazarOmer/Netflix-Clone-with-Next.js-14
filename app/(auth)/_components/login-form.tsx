@@ -1,12 +1,16 @@
 "use client";
+import { login } from "@/actions/login";
 import { Input } from "@/app/components/input";
 import { LoginSchema } from "@/schemas";
 import { zodResolver } from "@hookform/resolvers/zod";
 import Link from "next/link";
+import { useTransition } from "react";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
 
 export const LoginForm = () => {
+  const [isPending, startTransition] = useTransition();
+
   const {
     register,
     handleSubmit,
@@ -20,7 +24,9 @@ export const LoginForm = () => {
   });
 
   const onSubmit = (data: z.infer<typeof LoginSchema>) => {
-    console.log(data);
+    startTransition(() => {
+      login(data);
+    });
   };
 
   return (
@@ -51,6 +57,7 @@ export const LoginForm = () => {
         </p>
 
         <button
+          disabled={isPending}
           type="submit"
           className="bg-[#e50914] text-white rounded py-2 w-full px-4 text-md font-medium min-h-8"
         >
