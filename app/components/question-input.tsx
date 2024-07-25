@@ -21,7 +21,7 @@ export const QuestionItem = ({ data }: QuestionItemProps) => {
           isOpen ? "mb-0" : "mb-1"
         } flex items-center justify-between px-5 text-2xl`}
       >
-        <h3>{data.title}</h3>
+        <h3 className="select-none">{data.title}</h3>
         {isOpen ? <IoCloseOutline size={48} /> : <GoPlus size={48} />}
       </div>
       {isOpen && (

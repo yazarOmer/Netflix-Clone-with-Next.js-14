@@ -8,7 +8,7 @@ export const Input = ({ label, name, id }: InputProps) => {
   return (
     <div className="relative">
       <input
-        className="w-[400px] h-full rounded border border-[rgba(128,128,128,0.7)] bg-[rgba(22,22,22,0.7)] text-base pt-6 px-4 pb-2 text-white font-medium outline-none peer focus:outline-2 focus:outline-white"
+        className="w-full h-full rounded border border-[rgba(128,128,128,0.7)] bg-[rgba(22,22,22,0.7)] text-base pt-6 px-4 pb-2 text-white font-medium outline-none peer focus:outline-2 focus:outline-white"
         name={name}
         id={id}
       />
