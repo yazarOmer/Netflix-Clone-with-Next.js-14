@@ -20,7 +20,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/logo.png" sizes="any" />
       </head>
-      <body className="bg-black">{children}</body>
+      <body className="bg-black text-white">{children}</body>
     </html>
   );
 }
