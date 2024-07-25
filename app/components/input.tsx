@@ -4,16 +4,19 @@ interface InputProps {
   label: string;
   name: string;
   id: string;
+  isError: boolean;
   register: UseFormRegisterReturn<"email" | "password" | "username">;
 }
 
-export const Input = ({ label, name, id, register }: InputProps) => {
+export const Input = ({ label, name, id, register, isError }: InputProps) => {
   return (
     <div className="relative">
       <input
         {...register}
         type={name !== "password" ? "text" : "password"}
-        className="w-full h-full rounded border border-[rgba(128,128,128,0.7)] bg-[rgba(22,22,22,0.7)] text-base pt-6 px-4 pb-2 text-white font-medium outline-none peer focus:outline-2 focus:outline-white"
+        className={`w-full h-full rounded border ${
+          isError ? "border-[#eb3942]" : "border-[rgba(128,128,128,0.7)]"
+        }  bg-[rgba(22,22,22,0.7)] text-base pt-6 px-4 pb-2 text-white font-medium outline-none peer focus:outline-2 focus:outline-white`}
         name={name}
         id={id}
         placeholder=" "

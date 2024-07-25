@@ -30,6 +30,7 @@ export const LoginForm = () => {
       </h1>
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-2">
         <Input
+          isError={errors.email ? true : false}
           register={register("email")}
           label="E-posta veya cep telefonu numarası"
           name="email"
@@ -39,6 +40,7 @@ export const LoginForm = () => {
           {errors.email?.message}
         </p>
         <Input
+          isError={errors.password ? true : false}
           register={register("password")}
           label="Parola"
           name="password"

@@ -31,6 +31,7 @@ export const RegisterForm = () => {
 
       <form onSubmit={handleSubmit(onSubmit)}>
         <Input
+          isError={errors.username ? true : false}
           register={register("username")}
           label="Kullanıcı adı"
           name="username"
@@ -41,6 +42,7 @@ export const RegisterForm = () => {
         </p>
 
         <Input
+          isError={errors.email ? true : false}
           register={register("email")}
           label="E-posta veya cep telefonu numarası"
           name="email"
@@ -51,6 +53,7 @@ export const RegisterForm = () => {
         </p>
 
         <Input
+          isError={errors.password ? true : false}
           register={register("password")}
           label="Parola"
           name="password"
