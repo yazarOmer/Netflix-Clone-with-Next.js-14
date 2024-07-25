@@ -4,7 +4,7 @@ interface InputProps {
   label: string;
   name: string;
   id: string;
-  register: UseFormRegisterReturn<"email" | "password">;
+  register: UseFormRegisterReturn<"email" | "password" | "username">;
 }
 
 export const Input = ({ label, name, id, register }: InputProps) => {
