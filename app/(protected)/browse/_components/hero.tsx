@@ -18,8 +18,8 @@ interface HeroProps {
 export const Hero = ({ movie }: HeroProps) => {
   console.log(movie);
   return (
-    <div className="aspect-video relative">
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#141414] to-90%"></div>
+    <div className="aspect-video relative bg-[#141414]">
+      <div className="absolute inset-0 bg-gradient-to-b from-[#141414] from-5% via-transparent to-[#141414] to-90%"></div>
       <video
         muted
         src={movie?.videoUrl}
