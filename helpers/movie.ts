@@ -30,3 +30,13 @@ export const getRandomMovie = async () => {
         console.log(error)
     }
 }
+
+export const getMovies = async () => {
+    try {
+        const movies = await db.movie.findMany({})
+
+        return movies
+    } catch (error) {
+        console.log(error)
+    }
+}
