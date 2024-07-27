@@ -18,15 +18,21 @@ interface NavbarProps {
 }
 
 export const Navbar = ({ user }: NavbarProps) => {
-  const [scroll, setScroll] = useState(window.scrollY);
+  const [scroll, setScroll] = useState(0);
 
-  window.addEventListener("scroll", () => {
+  const setScrollFunc = () => {
     setScroll(window.scrollY);
-  });
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", setScrollFunc);
+
+    return () => window.removeEventListener("scroll", setScrollFunc);
+  }, []);
 
   return (
     <nav
-      className={`text-white fixed top-0 h-16 w-full ${
+      className={`text-white fixed z-10 top-0 h-16 w-full ${
         scroll > 0 ? "bg-[#141414]" : "bg-transparent"
       } flex items-center justify-between px-10 transition duration-200`}
     >

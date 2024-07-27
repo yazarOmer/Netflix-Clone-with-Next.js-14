@@ -5,7 +5,6 @@ import Link from "next/link";
 
 export default async function ProfilesPage() {
   const session = await auth();
-  console.log(session);
 
   return (
     <div className="bg-[#141414] w-full h-screen text-white flex items-center justify-center">
