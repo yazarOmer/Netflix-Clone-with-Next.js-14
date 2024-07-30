@@ -19,7 +19,7 @@ export const movies = [
         title: "Gladiator",
         description: "Roma İmparatorluğu'nun en sevilen gladyatörlerinden biri olan Maximus'un intikam arayışını konu alır.",
         videoUrl: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4",
-        thumbnailUrl: "https://i.ytimg.com/vi/owK1cxDselE/maxresdefault.jpg",
+        thumbnailUrl: "https://cdn.britannica.com/93/77293-050-CF984388/Russell-Crowe-Gladiator.jpg",
         genre: "Aksiyon",
         duration: "155 dk"
     },

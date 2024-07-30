@@ -30,7 +30,7 @@ export const Carousel = ({ label, movies }: CarouselProps) => {
   };
 
   return (
-    <div className="flex flex-col gap-y-2 overflow-hidden">
+    <div className="flex flex-col gap-y-2 overflow-hidden mb-16">
       <h2 className="text-2xl font-semibold px-10">{label}</h2>
       <div className="flex gap-2 min-w-fit transition-all duration-500">
         <div
@@ -47,7 +47,7 @@ export const Carousel = ({ label, movies }: CarouselProps) => {
             <div
               key={movie.id}
               style={{ backgroundImage: `url("${movie.thumbnailUrl}")` }}
-              className="aspect-video w-56 bg-center bg-no-repeat bg-cover rounded-[4px]"
+              className="aspect-video cursor-pointer w-56 bg-center bg-no-repeat bg-cover rounded-[4px]"
             ></div>
           ))}
         </div>

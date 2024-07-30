@@ -6,6 +6,8 @@ export const Lists = async () => {
   return (
     <div className="bg-[#141414] pb-10">
       <Carousel label="Bunları Seveceğinizi Düşünüyoruz" movies={data} />
+      <Carousel label="Sıradaki Önerimiz" movies={data} />
+      <Carousel label="Bugün En Çok İzlenenler" movies={data} />
     </div>
   );
 };
