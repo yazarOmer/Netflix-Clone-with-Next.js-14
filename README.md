@@ -1,3 +1,61 @@
+# Netflix Clone
+
+### Full Stack Netflix Clone Website Using Next.js 14
+
+This app is a fully functional, user-friendly Netflix website. Users can register and login the website using credentials.
+
+## Features and Tech Stack
+
+:lock: Authentication using NextAuth v5
+
+:framed_picture: View movies and series.
+
+:white_check_mark: Landing page
+
+[@nextjs](https://nextjs.org/) for full stack React.js framework
+
+[@prisma](https://x.com/prisma) for database ORM Tool
+
+[@tailwindcss](https://tailwindcss.com/) for CSS library
+
+[@react-hook-form](https://www.react-hook-form.com/) and [@zod](https://zod.dev/) for form validation
+
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+## Images
+
+#### Login Page
+
+![Login Page](public/login.png)
+
+#### Register Page
+
+![Register Page](public/register.png)
+
+#### Select Organization Page
+
+![Select Organization Page](public/select-org.png)
+
+#### Create Organization Page
+
+![Create Organization Page](public/create-org.png)
+
+#### Select Board Page
+
+![Select Board Page](public/select-board.png)
+
+#### Create Board Page
+
+![Create  Board Page](public/create-board.png)
+
+#### Board Page
+
+![Board Page](public/board.png)
+
+#### Create List Page
+
+![Create  List Page](public/create-list.png)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
