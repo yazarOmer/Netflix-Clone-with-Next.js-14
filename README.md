@@ -24,12 +24,6 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Images
 
-#### Login Page
-
-![Login Page](public/login.jpg)
-
-![Login Page](public/login2.jpg)
-
 #### Landing Page
 
 ![Landing Page](public/landing1.png)
@@ -37,6 +31,12 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ![Landing Page](public/landing2.png)
 
 ![Landing Page](public/landing3.png)
+
+#### Login Page
+
+![Login Page](public/login1.jpg)
+
+![Login Page](public/login2.jpg)
 
 #### Profiles Page
 
