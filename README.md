@@ -34,9 +34,9 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 #### Login Page
 
-![Login Page](public/login1.jpg)
+![Login Page](public/login1.png)
 
-![Login Page](public/login2.jpg)
+![Login Page](public/login2.png)
 
 #### Profiles Page
 
