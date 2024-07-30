@@ -26,35 +26,29 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 #### Login Page
 
-![Login Page](public/login.png)
+![Login Page](public/login.jpg)
 
-#### Register Page
+![Login Page](public/login2.jpg)
 
-![Register Page](public/register.png)
+#### Landing Page
 
-#### Select Organization Page
+![Landing Page](public/landing1.png)
 
-![Select Organization Page](public/select-org.png)
+![Landing Page](public/landing2.png)
 
-#### Create Organization Page
+![Landing Page](public/landing3.png)
 
-![Create Organization Page](public/create-org.png)
+#### Profiles Page
 
-#### Select Board Page
+![Profiles Page](public/profiles.png)
 
-![Select Board Page](public/select-board.png)
+#### Main Page
 
-#### Create Board Page
+![Main Page](public/main.png)
 
-![Create  Board Page](public/create-board.png)
+#### Movie Carousel
 
-#### Board Page
-
-![Board Page](public/board.png)
-
-#### Create List Page
-
-![Create  List Page](public/create-list.png)
+![Movie Carousel](public/slider.png)
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
